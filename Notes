@@ -1,0 +1,42 @@
+Js Main Topics
+1-Basics of Javascript
+    .Varibales->var,let,const
+    .Hoisting of Varibales
+
+
+2-Functions in Js
+    .Arrow Functions
+    .Higher Order Functions
+
+3-Arrays and Objects
+    .Array Destructuring
+    .Object Destructuring
+    .rest operator
+    .spread operator
+
+4-Conditions in Js
+    .if else
+    .ternary operator
+    .using && and ||
+    .optional chaining
+
+5-Array Methods
+    .map()
+    .filter()
+    .reduce()
+    .sort()
+
+6-Event Listeners
+    .onClick
+    .onBlur
+    .onChange
+    .onFocus
+
+7-Asynchronous Events
+    .Callbacks
+    .Callback Hell
+    .Promises
+    .Promise Api's
+    .async await
+    .try catch
+

@@ -2,6 +2,7 @@ Js Main Topics
 1-Basics of Javascript
     .Varibales->var,let,const
     .Hoisting of Varibales
+    .Hoisting of Functions
 
 
 2-Functions in Js

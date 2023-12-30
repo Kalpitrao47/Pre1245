@@ -57,13 +57,27 @@
 // console.log(x);
 
 //6-
-function a(){
-    var x = 10;
-    // console.log(x);
-    c();
-    function c(){
-        console.log(x);
-    }
-}
+// function a(){
+//     var x = 10;
+//     // console.log(x);
+//     c();
+//     function c(){
+//         console.log(x);
+//     }
+// }
+// a();
+
+// let and const declartions are hoisted but they are in the temporial dead zone for the time being.
+//means it is in Script object rather than in Global object so we cannot access it before initialization. 
 
 a();
+function a(){
+var a = 10;
+let b = 20;
+const c = 30;
+console.log(a);
+console.log(b);
+console.log(c);
+}
+
+

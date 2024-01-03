@@ -59,35 +59,60 @@ function y(x){
     x();
 }
 
+// const radius = [3,8,4,9]
+
+// const calArea = function(radius){           //Area
+//     const output = []
+//     for (i = 0; i<radius.length; i++){
+//         output.push(Math.PI*radius[i]*radius[i]);
+//     }
+//     return output;
+// }
+
+// console.log(calArea(radius));
+
+// const calCircum = function(radius){         //Circumference
+//     const output = []
+//     for (i = 0; i<radius.length; i++){
+//         output.push(2*(Math.PI*radius[i]));
+//     }
+//     return output;
+// }
+
+// console.log(calCircum(radius));
+
+
+// const calDiameter = function(radius){         //Diameter
+//     const output = []
+//     for (i = 0; i<radius.length; i++){
+//         output.push(2*radius[i]);
+//     }
+//     return output;
+// }
+
+// console.log(calDiameter(radius));
+
+
+
 const radius = [3,8,4,9]
-
-const calArea = function(radius){           //Area
-    const output = []
-    for (i = 0; i<radius.length; i++){
-        output.push(Math.PI*radius[i]*radius[i]);
-    }
-    return output;
+const area = function(radius){
+    return Math.PI*radius*radius
+}
+const circumference = function(radius){
+    return 2*Math.PI*radius
+}
+const diameter = function(radius){
+    return 2*radius
 }
 
-console.log(calArea(radius));
-
-const calCircum = function(radius){         //Circumference
-    const output = []
-    for (i = 0; i<radius.length; i++){
-        output.push(2*(Math.PI*radius[i]));
-    }
-    return output;
+const calculate = function(radius,logic){
+    const output = [];
+    for (i = 0; i< radius.length; i++){
+        output.push(logic(radius[i]));
+    }  
+    return output;  
 }
 
-console.log(calCircum(radius));
-
-
-const calDiameter = function(radius){         //Circumference
-    const output = []
-    for (i = 0; i<radius.length; i++){
-        output.push(2*radius[i]);
-    }
-    return output;
-}
-
-console.log(calDiameter(radius));
+console.log(calculate(radius,area));
+console.log(calculate(radius,circumference));
+console.log(calculate(radius,diameter));

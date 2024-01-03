@@ -70,14 +70,49 @@
 // let and const declartions are hoisted but they are in the temporial dead zone for the time being.
 //means it is in Script object rather than in Global object so we cannot access it before initialization. 
 
-a();
-function a(){
+// a();
+// function a(){
+// var a = 10;
+// let b = 20;
+// const c = 30;
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// }
+
+console.log(a); // What will this output? --- undefined
 var a = 10;
+console.log(a); // What will this output? --- 10  
+
+
+console.log(b); // What will this output? --- Reference Error       
 let b = 20;
+console.log(b); // What will this output? --- 20
+
+
+console.log(c); // What will this output? --- Reference Error   
 const c = 30;
-console.log(a);
-console.log(b);
-console.log(c);
+console.log(c); // What will this output? --- 30
+
+
+console.log(d); // What will this output? --- undefined
+if (true) {
+  var d = 40;
 }
+console.log(d); // What will this output? --- 40
+
+
+console.log(e); // What will this output? --- Reference error   
+if (true) {
+  let e = 50;
+}
+console.log(e); // What will this output? --- undefined
+
+
+console.log(f); // What will this output? --- Reference Error 
+if (true) {
+  const f = 60;
+}
+console.log(f); // What will this output? --- Undefined
 
 

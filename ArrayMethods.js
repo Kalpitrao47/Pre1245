@@ -57,3 +57,12 @@ const filterr = arr.filter((x)=>{
 })
 
 console.log(filterr);
+
+
+
+///sort() ----- The sort() method sorts an array alphabetically:
+// Reversing an Array
+// The reverse() method reverses the elements in an array:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.sort());
+console.log(fruits.reverse());

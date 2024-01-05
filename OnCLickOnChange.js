@@ -44,3 +44,29 @@ const ChangeExample = () => {
 export default ChangeExample;
 
 
+
+
+//onBlur Event
+import React, { useState } from 'react';
+
+const BlurExample = () => {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleBlur = () => {
+    console.log('Input field lost focus');
+  };
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+        onBlur={handleBlur}
+        placeholder="Type something"
+      />
+    </div>
+  );
+};
+
+export default BlurExample;

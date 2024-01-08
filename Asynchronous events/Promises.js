@@ -13,4 +13,13 @@ createOrder(cart,function(){
 //Now it is the responsibility of createOrder api  to create an order and 
 //then will call our callback function once the order is created using orderId.
 
+//Now to avoid inversion of control using callbacks we can use Promises.
+
+const promise = createOrder(cart);
+
+promise.then(function(orderId){
+    proceedToPayment(orderId);
+});
+
+
 

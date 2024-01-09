@@ -23,6 +23,13 @@ promise.then(function(orderId){           //attaching a callback function to a p
 
 
 fetch();                ///returns a promise object
+const data = fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
+
+console.log(data);      
 
 
+
+//What is a Promise in Javascript ---Interview Question
 

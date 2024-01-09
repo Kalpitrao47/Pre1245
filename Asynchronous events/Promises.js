@@ -32,4 +32,26 @@ console.log(data);
 
 
 //What is a Promise in Javascript ---Interview Question
+//A promise is an object representing the eventual completion or failure of an asynchronous operation.
+
+
+// promise chaining
+
+createOrder(cart)
+.then(function(orderId){
+    return proceedToPayment(orderId);
+})
+.then(function(paymentInfo){
+    return showOrderSummary(paymentInfo);
+})
+
+
+//Promise Chaining Using Arrow function
+createOrder(cart)
+.then((orderId)=>{
+    return proceedToPayment(orderId);
+})
+.then((paymentInfo)=>{
+    return showOrderSummary(paymentInfo);
+})
 

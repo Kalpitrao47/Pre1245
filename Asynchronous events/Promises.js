@@ -7,7 +7,7 @@ createOrder(cart); //orderId
 proceedToPayment(orderId);
 
 //Now how we use to handle async operations using callback functions:-
-createOrder(cart,function(){
+createOrder(cart,function(){              //passing the callback function
     proceedToPayment(orderId);
 })
 //Now it is the responsibility of createOrder api  to create an order and 
@@ -17,9 +17,12 @@ createOrder(cart,function(){
 
 const promise = createOrder(cart);
 
-promise.then(function(orderId){
+promise.then(function(orderId){           //attaching a callback function to a promise object.
     proceedToPayment(orderId);
 });
+
+
+fetch();                ///returns a promise object
 
 
 
